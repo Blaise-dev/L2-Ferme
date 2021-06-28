@@ -29,21 +29,13 @@
 						<li class="active"><a class = "aDecor" href="bergerie.html">Bergerie</a></li>
 						<li><a class = "aDecor" href="porcherie.html">Porcherie</a></li>
 						<li><a class = "aDecor" href="poulailler.html">Poulailler</a></li>
-						<li><a href="signout.php">Se déconnecter</a></li>
-
-								</ul>
-							</nav>
+						<li><a class = "aDecor" href="signout.php">Se déconnecter</a></li>
+					</ul>
+				</nav>
 							
-							<?php
-								}
-							?>
-					<?php
-					if(!isset($_SESSION['login'])) {
-						?>
-								<a class = "aDecor" href="connexion.php"></a>
-						<?php
-								}
-						?>
+				<?php
+					}
+				?>
 						
 				<section class = "col-lg-10">
 					<p class = "col-lg-12" ><h1 style = " text-align: center;">Bienvenue sur M@<span style = "color: red;">Ferme</span><?php if(isset($_SESSION['login'])) echo ", ".$_SESSION['login']; ?></h1></p>
