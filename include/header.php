@@ -1,4 +1,4 @@
-	<header style="margin-bottom: 60px;" class = "row">
+	<header class = "row">
 		<div class = "col-lg-12" >
 			<a style = "color: white; text-decoration: none; font-size: 35px; font-family: serif;" href = "index.php" title = "Retourner à l'accueil">Accueil</a>
 			<?php
