@@ -46,7 +46,7 @@
 						?>
 						
 				<section class = "col-lg-10">
-					<p class = "col-lg-12" ><h1 style = " text-align: center;">Bienvenue sur M@<span style = "color: red;">Ferme</span></h1></p>
+					<p class = "col-lg-12" ><h1 style = " text-align: center;">Bienvenue sur M@<span style = "color: red;">Ferme</span><?php if(isset($_SESSION['login'])) echo ", ".$_SESSION['login']; ?></h1></p>
 					<p class = "col-lg-12" style = "font-style: italic; font-size: 14px; margin-left: 40px; color: rgba(10, 10, 10, 0.3); text-align: center;">Le site de la Bio diversité animale.</p>
 					<div class = "row">
 						<div class = "col-lg-12" >
