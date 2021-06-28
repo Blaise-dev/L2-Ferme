@@ -1,0 +1,124 @@
+header, footer
+{
+	height: 100px;
+	background-color: rgba(1, 1, 1, 0.7);
+}
+
+footer
+{
+	text-align: center;
+	margin-top: 300px;
+	height: 250px;
+}
+
+.titre
+{
+	text-align: center;
+}
+
+a[href = "index.html" ]
+{
+	font-size: 35px;
+	font-family: serif;
+}
+
+section
+{
+	margin-top: 40px;
+}
+
+.menu_nav
+{
+	padding-top: 20px;
+	line-height: 50px;
+	border-right: 4px solid rgba(1, 1, 1, 0.7);
+	border-bottom: 4px solid rgba(1, 1, 1, 0.7);
+	background-color: rgba(39, 39, 39, 0.1);
+}
+
+.aDecor
+{
+	text-decoration: none!important;
+}
+
+#marge
+{
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+#margediv
+{
+	margin-top: 60px;
+}
+
+div.col-lg-5
+{
+	margin-left: 50px;
+}
+
+.margeimg
+{
+	margin: 8px;
+}
+
+.decale
+{
+	margin-top: 15px;
+	margin-left: 70px;
+}
+
+#slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+
+#slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-height: 100%;
+    /*... Code précédent ...*/
+    /*CSS3 keyframes animation*/
+    animation: slide 20s infinite ease-in-out forwards;
+}
+
+#slides figure {
+    display: inline-block;
+    width: 100vw;
+    max-height: 100%;
+    margin: 0;
+}
+
+#slides figure img {
+    width: 100%;
+    /*Centrer l'image verticalement si celle-ci ne peut être affichée totalement*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#slides figure figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 2.5em 0;
+    text-align: center;
+    width: inherit;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+@keyframes slide {
+    0%, 20%, 100% {
+        left: 0; /*1ère image*/
+    }
+    35%, 50% {
+        left: -100vw; /*2ème image*/
+    }
+    70%, 95% {
+        left: -200vw; /*3ème image*/
+    }
+}
