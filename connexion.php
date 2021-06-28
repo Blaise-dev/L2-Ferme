@@ -12,7 +12,7 @@
             $_SESSION['login'] = $coordonnees['login'];
             $_SESSION['mdp'] = $coordonnees['mdp'];
             if($coordonnees['mdp'] == $password)
-                header('refresh:2;url = index.php');
+                header('location: index.php');
             else
                 header('location: connexion.php');
             unset($_POST);
