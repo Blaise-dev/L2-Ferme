@@ -16,13 +16,6 @@ footer
 	text-align: center;
 }
 
-a[href = "index.php" ]
-{
-	text-decoration: none;
-	font-size: 35px;
-	font-family: serif;
-}
-
 section
 {
 	margin-top: 40px;
